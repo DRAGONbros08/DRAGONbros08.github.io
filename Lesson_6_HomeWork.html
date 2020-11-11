@@ -8,30 +8,22 @@
         body {
             justify-content: space-around;
             align-items: center;
+            display: flex;
+            height: 100vh;
+        }
+
+        .container {
+            flex-basis: 400px;
+            justify-content: space-between;
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+            background-color: aquamarine;
         }
         .one {
-            justify-content: space-around;
-            align-items: center;
-            display: flex;
-            flex-wrap: wrap;
             border-bottom-left-radius: 5px;
             border-bottom-right-radius: 5px;
-        }
-        .two {
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-            flex-wrap: wrap;
-            border-bottom-left-radius: 5px;
-            border-bottom-right-radius: 5px;
-        }
-        .three {
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-            flex-wrap: wrap;
-            border-bottom-left-radius: 5px;
-            border-bottom-right-radius: 5px;
+            width: 100%;
         }
         button {
             color: white;
@@ -44,14 +36,21 @@
     </style>
 </head>
 <body>
-    <img src="img" class="one">
-    <p class="one">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est excepturi hic distinctio! Aliquam libero commodi labore sint facere minus velit. Modi perspiciatis, necessitatibus dolor distinctio totam odio quasi velit accusamus?</p>
-    <button class="one">Learn more</button>
-    <img src="img" class="two">
-    <p class="two">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis sunt labore aperiam omnis quasi, eveniet voluptatem sint tenetur voluptatum doloribus fugiat recusandae non aspernatur ipsum explicabo illo dolorum quisquam in.</p>
-    <button class="two">Learn more</button>
-    <img src="img" class="three">
-    <p class="three">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, obcaecati enim nihil cumque ipsum corrupti repudiandae optio totam maxime doloremque unde officia, eaque alias nulla id, quo voluptatibus iure vitae.</p>
-    <button class="three">Learn more</button>
+    <div class="container">
+        <img src="img">
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est excepturi hic distinctio! Aliquam libero commodi labore sint facere minus velit. Modi perspiciatis, necessitatibus dolor distinctio totam odio quasi velit accusamus?</p>
+        <button class="one">Learn more</button>
+    </div>
+    <div class="container">
+        <img src="img">
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est excepturi hic distinctio! Aliquam libero commodi labore sint facere minus velit. Modi perspiciatis, necessitatibus dolor distinctio totam odio quasi velit accusamus?</p>
+        <button class="one">Learn more</button>
+    </div>
+    <div class="container">
+        <img src="img">
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est excepturi hic distinctio! Aliquam libero commodi labore sint facere minus velit. Modi perspiciatis, necessitatibus dolor distinctio totam odio quasi velit accusamus?</p>
+        <button class="one">Learn more</button>
+    </div>
+
 </body>
 </html>
