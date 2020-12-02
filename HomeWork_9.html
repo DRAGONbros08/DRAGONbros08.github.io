@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>  
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+        }
+        .container-1 {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            margin: 1em;
+            text-align: center;
+            flex-basis: 25%;
+        }
+        .container-2 {
+            width: 100%;
+        }
+        .name {
+            border: 3px solid grey;
+        }
+        .down .chto {
+            padding: 3em;
+            border: 3px solid grey;
+            margin: 1em 0;
+        }
+        .container-2 {
+            display: flex;
+            margin: .5em;
+        }
+        .wrap-1, .wrap-2 {
+            flex-basis: 50%;
+            height: 100%;
+            margin: 0 .25em;
+        }
+        .img {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .wrap-1 .img {
+            height: 20%;
+            width: 100%;
+            background-color: black;
+        }
+        .wrap-2 .img {
+            height: 70%;
+            width: 100%;
+            background-color: black;
+        }
+        .container-2 p {
+            font-size: 2em;
+        }
+        .img h2 {
+            margin: 0;
+            padding: 0;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="container-1">
+        <div class="name">
+            <h1>Название сайта</h1>
+        </div>
+        <div class="down">
+            <div class="chto">Навигация по разделам</div>
+            <div class="chto">Навигация по разделам</div>
+            <div class="chto">Навигация по разделам</div>
+            <div class="chto">Навигация по разделам</div>
+        </div>
+    </div>
+    <div class="container-2">
+        <div class="wrap-1">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore adipisci, vel blanditiis ea consequatur culpa dicta porro facilis eum reiciendis deserunt omnis magnam maxime nesciunt, exercitationem excepturi odit quasi nobis.</p>
+            <div class="img">
+                <h2>Картинка</h2>
+            </div>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolores sed quis nesciunt! Praesentium quae fugiat cum recusandae qui, quia soluta delectus nam voluptate voluptatem, ea est dignissimos. Eius, sint eum.</p>
+        </div>
+        <div class="wrap-2">
+            <div class="img">
+                <h2>Картинка</h2>
+            </div>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolores sed quis nesciunt! Praesentium quae fugiat cum recusandae qui, quia soluta delectus nam voluptate voluptatem, ea est dignissimos. Eius, sint eum.</p>
+        </div>
+    </div>
+</body>
+</html>
