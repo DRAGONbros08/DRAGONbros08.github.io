@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            background-color: darkorchid;
+            transition: all ease .25s;
+        }
+        p {
+            color: white;
+            text-align: center;
+        }
+        form:hover {
+            box-shadow: 1px 1px 0 0 purple,
+            2px 2px 0 0 purple,
+            3px 3px 0 0 purple,
+            4px 4px 0 0 purple,
+            5px 5px 0 0 purple;
+            transform: translate(-6px -6px);
+        }
+        input[type=submit] {
+            background-color: cyan;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <p>Введите имя:</p>
+        <input type="text" name="" id="">
+        <p>Ваша почта:</p>
+        <input type="text" name="" id="">
+        <input type="submit" value="Поиск">
+    </form>
+</body>
+</html>
