@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            height: 100vh;
+            background-color: #AA41BE;
+            overflow: hidden;
+            margin: 0;
+        }
+    
+        span {
+            position: absolute;
+            left: -25px;
+            top: 50%;
+            width: 25px;
+            height: 25px;
+            border-radius: 50%;
+            background-color: #55BE41;
+        }
+    
+        span:nth-child(1) {
+            animation: e 8s 3.75s ease-in-out infinite;
+        }
+        span:nth-child(2) {
+            animation: e 12s 1.75s ease-in-out infinite;
+        }
+        span:nth-child(3) {
+            animation: e 18s .75s ease-in-out infinite;
+        }
+        span:nth-child(4) {
+            animation: e 11s 7.75s ease-in-out infinite;
+        }
+        span:nth-child(5) {
+            animation: e 7s 2.25s ease-in-out infinite;
+        }
+        span:nth-child(6) {
+            animation: e 5s 4.75s ease-in-out infinite;
+        }
+        @keyframes e {
+            0% {
+                left: -25px;
+                top: 50%;
+            }
+            25% {
+                top: 40%;
+            }
+            50% {
+                top: 55%;
+            }
+            75% {
+                top: 35%;
+            }
+            100% {
+                left: 100%;
+                top: 50%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+</body>
+</html>
