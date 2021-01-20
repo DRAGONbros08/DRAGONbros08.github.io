@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+            background-color: darkorchid;
+        }
+        .sky {
+            background-image: url("night.jpg");
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 100vh;
+        }
+        .wat {
+            background-image: url("night.jpg");
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 100vh;
+            display: block;
+        }
+        .star {
+            position: absolute;
+            background-color: white;
+            top: 0;
+        }
+        .star:nth-child(1) {
+            width: 3px;
+            height: 3px;
+            left: 4vw;
+            animation: fly 7s .2s linear infinite;
+        }
+        .star:nth-child(2) {
+            width: 3px;
+            height: 3px;
+            left: 14vw;
+            animation: fly 7.5s .2s linear infinite;
+        }
+        .star:nth-child(3) {
+            width: 3px;
+            height: 3px;
+            left: 44vw;
+            animation: fly 6.5s .2s linear infinite;
+        }
+        .star:nth-child(4) {
+            width: 3px;
+            height: 3px;
+            left: 62vw;
+            animation: fly 6s .9s linear infinite;
+        }
+        @keyframes fly {
+            0% {
+                top: -5px;
+            }
+            100% {
+                top: 199vh;
+            }
+        }
+        h1 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: darkorchid;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <span class="star"></span>
+    <span class="star"></span>
+    <span class="star"></span>
+    <span class="star"></span>
+    <div class="sky"></div>
+    <h1>HELLO WORLD!</h1>
+    <div class="wat"></div>
+</body>
+</html>
