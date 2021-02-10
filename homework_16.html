@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+        }
+        .g-c {
+            display: grid;
+            height: 100%;
+            grid-template-rows: 1fr 4fr 3fr;
+            grid-template-columns: 1fr 1.2fr 2fr;
+            grid-template-areas: 
+                "photo   nav   nav"
+                "photo   main  pers"
+                "life    main  pur";
+        }
+        main {
+            grid-area: main;
+            background-color: #ffffff;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .life {
+            grid-area: life;
+            grid-row-start: 3;
+            grid-row-end: 4;
+            grid-column-start: 1;
+            grid-column-end: 2;
+            background-color: #f4fa9c;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #64add5;
+            font-family: mv boli;
+        }
+        .pers {
+            grid-area: pers;
+            background-color: #f4fa9c;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: mv boli;
+            color: #ff3450;
+        }
+        footer {
+            grid-area: pur;
+            background-color: #9e51ab;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        nav {
+            grid-area: nav;
+            background-color: #581b98;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            color: #ffffff;
+            font-family: BRUSH SCRIPT MT;
+        }
+        .photo {
+            grid-area: photo;
+            background-image: url('ice.jpg');
+            background-size: cover;
+            background-position: center;
+        }
+        .text {
+            font-family: BRUSH SCRIPT MT;
+            font-weight: bold;
+            color: #1d3e64;
+        }
+        h5 {
+            font-size: 30px;
+        }
+        .port, .nav {
+            width: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+        }
+        .ham div {
+            background-color: #ffffff;
+            height: 5px;
+            width: 1em;
+            margin: 5px;
+        }
+        span {
+            font-size: 35px;
+        }
+        .ex {
+            position: absolute;
+            top: 85%;
+            transform: translateY(-25%);
+            font-size: 25px;
+            padding: 0 50px;
+            left: 50%;
+            background-color: #ffffff;
+            color: #ff3351;
+            font-family: mv boli;
+        }
+    </style>
+<body>
+    <div class="g-c">
+        <main>
+            <div class="text"><h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, excepturi? Nemo repudiandae, quod obcaecati totam quos suscipit id distinctio ducimus earum. Corrupti repudiandae cupiditate enim et! Unde dolores ipsa non?</h5></div>
+        </main>
+        <div class="life">
+            <h5>
+                - Life -
+            </h5>
+        </div>
+        <div class="pers">
+            <h5>
+                Personal
+            </h5>
+        </div>
+        <footer>
+            <div>
+                
+            </div>
+        </footer>
+        <nav>
+            <div class="port">
+                <span>
+                    <h1>My Portfolio</h1>
+                </span>
+                <span>
+                    
+                </span>
+            </div>
+            <div class="nav">
+                <span>
+                    home 
+                </span>
+                <span>
+                    about
+                </span>
+                <span> 
+                    <div class="ham">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </span>
+                </div>
+            </div>
+        </nav>
+        <div class="photo">
+
+        </div>
+    </div>
+    <span class="ex">
+        <h1>Expression</h1>
+    </span>
+</body>
+</html>
