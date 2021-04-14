@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let riddle = 'Чем можно поделится только 1 раз?'
+        let answer = 'секретом'
+        alert('Отгадай загадку - ' + riddle)
+        let noAnswer
+        while (noAnswer !== answer) {
+            noAnswer = prompt('Ваш ответ:')
+            if (noAnswer !== answer) {
+                alert('Ответ неверный, попробуй ещё раз...')
+            }
+        }
+        alert(noAnswer + ' это правильный ответ! Молодец')
+    </script>
+</body>
+</html>
