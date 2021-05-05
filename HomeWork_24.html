@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1></h1>
+    <p></p>
+    <script>
+        let head = document.querySelector('h1')
+        let paragraph = document.querySelector('p')
+
+        function text(object, t) {
+            object.textContent = t
+        }
+        function color(object, c) {
+            object.style.color = c
+        }
+
+        let textInput = prompt('Введите текст для заголовка:')
+        text(head, textInput)
+        textInput = prompt('Введите цвет для заголовка:')
+        color(head, textInput)
+        textInput = prompt('Введите текст для параграфа:')
+        text(paragraph, textInput)
+        textInput = prompt('Введите цвет для параграфа:')
+        color(paragraph, textInput)
+    </script>
+</body>
+</html>
