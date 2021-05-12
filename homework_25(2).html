@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        .first {
+            background-color: darkviolet;
+            width: 50%;
+            height: 50vh;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 3em;
+            transition: all ease .50s;
+        }
+        .second {
+            background-color: cyan;
+            width: 50%;
+            height: 50vh;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 3em;
+            transition: all ease .50s;
+        }
+        .third {
+            background-color: lime;
+            width: 50%;
+            height: 50vh;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 3em;
+            transition: all ease .50s;
+        }
+        .fourth {
+            background-color: red;
+            width: 50%;
+            height: 50vh;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 3em;
+            transition: all ease .25s;
+        }
+        body {
+            margin: 0;
+            display: flex;
+            flex-wrap: wrap;
+            padding: 0;
+        }
+    </style>
+    <div class="first">Click me!</div>
+    <div class="second">Click me!</div>
+    <div class="third">Click me!</div>
+    <div class="fourth">Click me!</div>
+    <script>
+        let four = document.getElementsByTagName('div')
+
+        function click(event) {
+            event.target.textContent = "Don't click anymore!"
+            event.target.style.background = 'black'
+        }
+        for (let i = 0; i < four.length; i++) {
+            let object = four[i]
+            object.addEventListener('click', click)
+        }
+    </script>
+</body>
+</html>
